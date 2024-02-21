@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: Archivo-Regular;
+    src: url("../fonts/Archivo-Regular.ttf");
+}
+@font-face {
+    font-family: Archivo-Medium;
+    src: url("../fonts/Archivo-Medium.ttf");
+}
+@font-face {
+    font-family: Inter-Resulat;
+    src: url("../fonts/Inter-Regular.otf");
+}
