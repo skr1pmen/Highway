@@ -5,9 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/styles/style.css">
     <script src="./assets/scripts/script.js" defer></script>
     <title>Магистраль-2008Н</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
     <main class="mainBlock" id="services">
@@ -82,16 +86,40 @@
     <div class="licensesBlock" id="licenses">
         <div class="container">
             <h2 class="titleBlock">Лицензии</h2>
-            <div class="licenses">
-                <img src="./assets/images/licenses1.png" alt="licenses1">
-                <img src="./assets/images/licenses2.png" alt="licenses2">
-                <img src="./assets/images/licenses3.png" alt="licenses3">
-            </div>
-            <div class="licensesLines">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+
+            <section class="splide" aria-labelledby="carousel-heading">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="./assets/images/licenses1.png" alt="licenses1"></li>
+                        <li class="splide__slide"><img src="./assets/images/licenses2.png" alt="licenses2"></li>
+                        <li class="splide__slide"><img src="./assets/images/licenses3.png" alt="licenses3"></li>
+                        <li class="splide__slide"><a href="./assets/docs/выписка%20СРО.pdf" download><img src="./assets/images/licenses4.png" alt="licenses4"></a></li>
+                        <li class="splide__slide"><a href="./assets/docs/ИСО%2045001-2020.PDF" download><img src="./assets/images/licenses5.png" alt="licenses5"></a></li>
+                        <li class="splide__slide"><a href="./assets/docs/ИСО%209001-2015.pdf" download><img src="./assets/images/licenses6.png" alt="licenses6"></a></li>
+                        <li class="splide__slide"><a href="./assets/docs/ИСО%2014001-2016.pdf" download><img src="./assets/images/licenses7.png" alt="licenses7"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <script>
+                let splide = new Splide( '.splide', {
+                    type   : 'loop',
+                    perPage: 3,
+                    focus  : 'center',
+                } );
+
+                splide.mount();
+            </script>
+
+<!--            <div class="licenses">-->
+<!--                <img src="./assets/images/licenses1.png" alt="licenses1">-->
+<!--                <img src="./assets/images/licenses2.png" alt="licenses2">-->
+<!--                <img src="./assets/images/licenses3.png" alt="licenses3">-->
+<!--            </div>-->
+<!--            <div class="licensesLines">-->
+<!--                <div class="line"></div>-->
+<!--                <div class="line"></div>-->
+<!--                <div class="line"></div>-->
+<!--            </div>-->
         </div>
     </div>
     <div class="contactsBlock" id="contact">
@@ -116,5 +144,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>
