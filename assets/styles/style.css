@@ -291,7 +291,7 @@ iframe{
     transform: scale(1);
 }
 
-.burgerMenu {
+.burgerMenu, .aboutWrapper.mobile {
     display: none;
 }
 
@@ -401,5 +401,135 @@ iframe{
 
     .services::-webkit-scrollbar {
         width: 0;
+    }
+
+    .aboutBlock {
+        height: auto;
+    }
+
+    .aboutImg {
+        position: inherit;
+        transform: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutWrapper {
+        display: none;
+    }
+
+    .aboutWrapper.mobile {
+        display: block;
+        height: max-content;
+    }
+
+    .aboutInfo {
+        position: inherit;
+        transform: none;
+        height: max-content;
+    }
+
+    .aboutInfo > span {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 11px;
+    }
+
+    .advantagesBlock {
+        height: 534px;
+    }
+
+    .advantagesBlock > .container {
+        gap: 10px;
+        justify-content: start;
+        padding-top: 15px;
+    }
+
+    .advantagesBody {
+        gap: 10px;
+    }
+
+    .advantagesBody span {
+        width: 247px;
+        height: 73px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .clientsBlock {
+        height: max-content;
+    }
+
+    .clientsBlock > .container {
+        justify-content: start;
+    }
+
+    .clients {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .clients > img {
+        width: 142px;
+    }
+
+    .licensesBlock {
+        height: calc(43vh + 25px);
+    }
+
+    .licensesBlock > .container {
+        gap: 34px;
+    }
+
+    .splide__list {
+        gap: 60px;
+    }
+
+    .splide__slide > img,
+    .splide__slide > a {
+        height: 16rem;
+    }
+
+    .splide__pagination__page {
+        width: 25px;
+        height: 3px;
+    }
+
+    .contactsBlock > div > span {
+        font-size: 15px;
+        line-height: 15px;
+        width: 245px;
+    }
+
+    .map {
+        height: 300px;
+    }
+
+    .mapInfo {
+        width: 50%;
+        gap: 0;
+        justify-content: center;
+        height: inherit;
+        padding-top: 10px;
+    }
+
+    .mapInfo h3 {
+        font-size: 15px;
+        padding: 0;
+        line-height: normal;
+    }
+
+    .mapInfo span {
+        font-size: 10px;
+    }
+
+    #map_892519072 {
+        height: 300px;
     }
 }

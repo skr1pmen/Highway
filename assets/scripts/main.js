@@ -15,4 +15,4 @@ menu.addEventListener("click", () => {
     } else {
         nav.classList.add("active");
     }
-})
+});
