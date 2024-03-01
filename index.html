@@ -5,12 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="./assets/scripts/main.js"></script>
     <script src="./assets/scripts/script.js" defer></script>
     <title>Магистраль-2008Н</title>
-
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
@@ -18,7 +17,8 @@
         <header>
             <div class="container">
                 <div class="logo">Магистраль-2008Н</div>
-                <nav>
+                <div class="burgerMenu"><span></span></div>
+                <nav class="nav">
                     <ul>
                         <li><a href="#services">Услуги</a></li>
                         <li><a href="#about">Компания</a></li>
@@ -109,17 +109,6 @@
 
                 splide.mount();
             </script>
-
-<!--            <div class="licenses">-->
-<!--                <img src="./assets/images/licenses1.png" alt="licenses1">-->
-<!--                <img src="./assets/images/licenses2.png" alt="licenses2">-->
-<!--                <img src="./assets/images/licenses3.png" alt="licenses3">-->
-<!--            </div>-->
-<!--            <div class="licensesLines">-->
-<!--                <div class="line"></div>-->
-<!--                <div class="line"></div>-->
-<!--                <div class="line"></div>-->
-<!--            </div>-->
         </div>
     </div>
     <div class="contactsBlock" id="contact">
@@ -144,6 +133,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>

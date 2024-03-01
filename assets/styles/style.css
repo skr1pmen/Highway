@@ -290,3 +290,116 @@ iframe{
     background: #E85029;
     transform: scale(1);
 }
+
+.burgerMenu {
+    display: none;
+}
+
+@media screen and (max-width: 486px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    header {
+        height: 34px;
+    }
+
+    header > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .burgerMenu {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .burgerMenu > span {
+        width: 35px;
+        height: 4px;
+        background: #E85029;
+        position: relative;
+    }
+
+    .burgerMenu > span:before {
+        content: "";
+        position: absolute;
+        top: -9px;
+        width: inherit;
+        height: inherit;
+        background: #E85029;
+    }
+
+    .burgerMenu > span:after {
+        content: "";
+        position: absolute;
+        bottom: -9px;
+        width: inherit;
+        height: inherit;
+        background: #E85029;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        right: -50%;
+        transition: right .4s ease-in-out;
+        background: #1E1E1E7F;
+        padding: 10px 27px 13px 12px;
+        margin-right: -2.6%;
+    }
+
+    nav.active {
+        right: 0%;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 9px;
+    }
+
+    .serviceWrapper {
+        padding-bottom: 0;
+    }
+
+    .titleBlock {
+        font-size: 30px;
+    }
+
+    .serviceWrapper > div > .titleBlock {
+        margin-bottom: 21px;
+    }
+
+    .services {
+        overflow: scroll;
+        width: auto;
+        scrollbar-width: none;
+    }
+
+    .services > span {
+        display: block;
+        min-width: 285px;
+        padding: 25px 6px 16px 16px;
+        font-size: 18px;
+    }
+
+    .services::-webkit-scrollbar {
+        width: 0;
+    }
+}
