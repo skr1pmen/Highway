@@ -1,322 +1,377 @@
-@import "fonts.css";
-*{
+@import url(fonts.css);
+
+.logo, .titleBlock {
+    font-family: Roboto-Bold, sans-serif;
+    color: #e85029
+}
+
+.services > span, li > a {
+    color: #fff;
+    font-size: 1.56rem
+}
+
+.advantagesBody span, .clients img, .services > span {
+    transition: transform .2s ease-in-out
+}
+
+.line, .splide__pagination__page {
+    transition: background .2s linear;
+    cursor: pointer
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
 }
-enter{
+
+enter {
     display: block;
-    margin-bottom: 39px;
+    margin-bottom: 39px
 }
-.mainBlock{
+
+.mainBlock {
     width: 100%;
     height: 100svh;
-    background: url("../images/main_bg.png") center center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background: url("../images/main_bg.webp") center center/cover no-repeat;
+    -webkit-background-size: cover
 }
-header{
+
+header {
     height: 4.25rem;
-    background: rgba(30, 30, 30, 0.5);
+    background: rgba(30, 30, 30, .5)
 }
-.container{
+
+.container {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto
 }
-header > .container{
+
+header > .container {
     height: inherit;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: end
 }
-.logo{
-    color: #E85029;
-    font-family: Roboto-Bold, sans-serif;
-    font-size: 2.5rem;
+
+.logo {
+    font-size: 2.5rem
 }
-nav ul{
+
+nav ul {
     display: flex;
     gap: 41px;
-    margin-bottom: 9px;
+    margin-bottom: 9px
 }
-li > a{
-    color: #fff;
-    font-family: Roboto-Bold, sans-serif;
-    font-size: 1.56rem;
+
+li > a {
+    font-family: Roboto-Bold, sans-serif
 }
-li:hover{
-    transform: translateY(-2px);
+
+li:hover {
+    transform: translateY(-2px)
 }
-.serviceWrapper{
+
+.serviceWrapper {
     width: 100%;
     height: calc(100svh - 4.25rem);
     display: flex;
     justify-content: start;
     align-items: end;
-    padding-bottom: 98px;
+    padding-bottom: 98px
 }
-.titleBlock{
-    font-family: Roboto-Bold, sans-serif;
+
+.titleBlock {
     font-size: 3.75rem;
-    color: #E85029;
-    font-weight: 400;
+    font-weight: 400
 }
-.serviceWrapper > div > .titleBlock{
-    margin-bottom: 45px;
+
+.serviceWrapper > div > .titleBlock {
+    margin-bottom: 45px
 }
-.services{
+
+.services {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    gap: 36px;
+    gap: 36px
 }
-.services > span{
+
+.services > span {
     padding: 42px 19px 46px;
     background: #041528FF;
-    color: #fff;
     font-family: Archivo-Medium, sans-serif;
-    font-size: 1.56rem;
-    cursor: pointer;
-    transition: transform .2s ease-in-out;
+    cursor: pointer
 }
-.services > span:hover,
-.advantagesBody span:hover,
-.clients img:hover{
-    transform: translateY(-8px) scale(1.01);
+
+.aboutInfo > span, .advantagesBody span, .contactsBlock > div > span, .subtitle {
+    font-family: Archivo-Regular, sans-serif;
+    font-size: 1.88rem;
+    line-height: 2.06rem
 }
-/*About block*/
-.aboutWrapper{
+
+.advantagesBody span:hover, .clients img:hover, .services > span:hover {
+    transform: translateY(-8px) scale(1.01)
+}
+
+.aboutWrapper {
     position: relative;
     height: 100svh;
     display: flex;
-    align-items: center;
+    align-items: center
 }
+
 .aboutImg {
     position: absolute;
     transform: translate(-43%, 6%);
-    height: 39rem;
+    height: 39rem
 }
-.aboutInfo{
+
+.aboutInfo {
     position: absolute;
-    transform: translateX(100%);
+    transform: translateX(100%)
 }
-.aboutInfo .titleBlock{
-    margin-bottom: 11px;
+
+.aboutInfo .titleBlock {
+    margin-bottom: 11px
 }
+
 .aboutInfo > span {
     max-width: 600px;
     display: block;
-    font-family: Archivo-Regular, sans-serif;
-    font-size: 1.88rem;
-    line-height: 2.06rem;
-    text-align: justify;
+    text-align: justify
 }
-/*Advantages Block*/
-.advantagesBlock{
+
+.advantagesBlock {
     width: 100%;
     height: 100svh;
-    background: url("../images/advantages_bg.png") center center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background: url("../images/advantages_bg.webp") center center/cover no-repeat;
+    -webkit-background-size: cover
 }
-.advantagesBlock > .container{
+
+.advantagesBlock > .container {
     height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 117px;
-    flex-direction: column;
+    flex-direction: column
 }
-.subtitle{
-    font-family: Archivo-Regular, sans-serif;
-    font-size: 1.88rem;
+
+.subtitle {
     font-weight: 400;
-    line-height: 2.06rem;
     text-align: justify;
-    width: 50%;
+    width: 50%
 }
-.advantagesBlock > div > .subtitle{
+
+.advantagesBlock > div > .subtitle {
     width: 37.31rem;
-    display: block;
+    display: block
 }
-.advantagesBody{
+
+.advantagesBody {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 61px 60px;
     width: inherit;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
-.advantagesBody span{
+
+.advantagesBody span {
     width: 29.69rem;
     height: 9.44rem;
     padding: 20px 16px;
     background: #fff;
-    border: .19rem solid #E85029;
-    font-family: Archivo-Regular, sans-serif;
-    font-size: 1.88rem;
-    line-height: 2.06rem;
+    border: .19rem solid #e85029;
     text-align: left;
     display: flex;
     align-items: center;
-    cursor: pointer;
-    transition: transform .2s ease-in-out;
+    cursor: pointer
 }
-/*Clients Block*/
-.clientsBlock,
-.licensesBlock{
-    width: 100%;
-    height: 100svh;
-}
-.clientsBlock > .container{
-    height: inherit;
-    display: flex;
+
+.clientsBlock > .container, .licenses {
     justify-content: center;
+    display: flex
+}
+
+.clientsBlock, .licensesBlock {
+    width: 100%;
+    height: 100svh
+}
+
+.clientsBlock > .container {
+    height: inherit;
     align-items: start;
     flex-direction: column;
-    gap: 25px;
+    gap: 25px
 }
-.clients{
+
+.clients {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 59px 34px;
+    gap: 59px 34px
 }
-.clients img{
-    transition: transform .2s ease-in-out;
-}
-/*Licenses Block*/
-.licensesBlock > .container{
+
+.licensesBlock > .container {
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 70px
 }
-.licenses{
+
+.licenses {
+    align-items: center;
+    gap: 17px
+}
+
+.licensesLines {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 17px;
+    gap: 30px
 }
-.licensesLines{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-.line{
+
+.line {
     width: 4.38rem;
-    height: 0.31rem;
-    background: rgba(232, 80, 41, 0.3);
-    transition: background .2s linear;
-    cursor: pointer;
+    height: .31rem;
+    background: rgba(232, 80, 41, .3)
 }
-.line:hover{
-    background: #E85029;
+
+.line:hover {
+    background: #e85029
 }
-/*Contacts Block*/
-.contactsBlock{
+
+.contactsBlock {
     width: 100%;
-    height: max-content;
+    height: max-content
 }
-.contactsBlock > div > span{
-    font-family: Archivo-Regular, sans-serif;
-    font-size: 1.88rem;
-    line-height: 2.06rem;
+
+.contactsBlock > div > span {
     text-align: justify;
     max-width: 44.25rem;
     display: block;
     margin-top: 10px;
-    margin-bottom: 14px;
+    margin-bottom: 14px
 }
-.map{
-    position: relative;
+
+.map {
+    position: relative
 }
-iframe{
+
+iframe {
     position: absolute;
-    width: 100%;
+    width: 100%
 }
-.wrapper_bg{
+
+.wrapper_bg {
     position: absolute;
     width: 60%;
-    background: rgba(255, 255, 255, 0.4);
-    height: 100%;
+    background: rgba(255, 255, 255, .4);
+    height: 100%
 }
-.mapInfo{
+
+.mapInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 600px;
     width: 600px;
     gap: 10px;
-    position: relative;
+    position: relative
 }
-.mapInfo h3{
+
+.mapInfo h3 {
     font-family: Roboto-Bold, sans-serif;
     font-size: 2.5rem;
-    line-height: 2.94rem;
+    line-height: 2.94rem
 }
+
 .mapInfo span {
     font-family: Archivo-Regular, sans-serif;
     font-size: 1.88rem;
     line-height: 2.06rem;
-    margin-bottom: 17px;
+    margin-bottom: 17px
 }
 
-.splide__slide>a,
-.splide__slide>img{
+.splide__slide > a, .splide__slide > img {
     height: 56svh;
     display: flex;
-    justify-content: center;
-}
-.splide__arrow{
-    display: none;
-}
-.splide__pagination{
-    margin-bottom: -50px;
-}
-.splide__pagination__page{
-    width: 4.38rem;
-    height: 0.31rem;
-    background: rgba(232, 80, 41, 0.3);
-    transition: background .2s linear;
-    cursor: pointer;
-    border-radius: 0;
-}
-.splide__pagination__page.is-active{
-    background: #E85029;
-    transform: scale(1);
+    justify-content: center
 }
 
-.burgerMenu, .aboutWrapper.mobile {
-    display: none;
+.aboutWrapper.mobile, .burgerMenu, .splide__arrow {
+    display: none
+}
+
+.splide__pagination {
+    margin-bottom: -50px
+}
+
+.splide__pagination__page {
+    width: 4.38rem;
+    height: .31rem;
+    background: rgba(232, 80, 41, .3);
+    border-radius: 0
+}
+
+.splide__pagination__page.is-active {
+    background: #e85029;
+    transform: scale(1)
 }
 
 @media screen and (max-width: 486px) {
+    .burgerMenu > span:after, .burgerMenu > span:before {
+        content: "";
+        width: inherit;
+        height: inherit;
+        background: #e85029;
+        position: absolute
+    }
+
+    .aboutImg, .aboutInfo {
+        position: inherit;
+        transform: none
+    }
+
+    .services, .splide__track {
+        margin-left: -2.6%;
+        margin-right: -2.6%
+    }
+
+    .services, .splide__track, nav {
+        margin-right: -2.6%
+    }
+
     body {
-        overflow-x: hidden;
+        overflow-x: hidden
     }
 
     .container {
-        width: 95%;
+        width: 95%
     }
 
     header {
-        height: 34px;
+        height: 54px;
+        position: fixed;
+        top: 0;
+        z-index: 12;
+        width: 100%
     }
 
     header > .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: relative;
+        position: relative
     }
 
     .logo {
-        font-size: 25px;
+        font-size: 25px
     }
 
     .burgerMenu {
@@ -325,190 +380,193 @@ iframe{
         display: flex;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
+        cursor: pointer
+    }
+
+    .aboutBlock, .aboutImg {
+        height: auto
     }
 
     .burgerMenu > span {
         width: 35px;
         height: 4px;
-        background: #E85029;
-        position: relative;
+        background: #e85029;
+        position: relative
     }
 
     .burgerMenu > span:before {
-        content: "";
-        position: absolute;
-        top: -9px;
-        width: inherit;
-        height: inherit;
-        background: #E85029;
+        top: -9px
     }
 
     .burgerMenu > span:after {
-        content: "";
-        position: absolute;
-        bottom: -9px;
-        width: inherit;
-        height: inherit;
-        background: #E85029;
+        bottom: -9px
     }
 
     nav {
         position: absolute;
         top: 100%;
-        right: -50%;
+        right: -100%;
         transition: right .4s ease-in-out;
-        background: #1E1E1E7F;
-        padding: 10px 27px 13px 12px;
-        margin-right: -2.6%;
+        background: #1e1E1E7F;
+        padding: 10px 27px 13px 12px
     }
 
     nav.active {
-        right: 0%;
+        right: 0
     }
 
     nav > ul {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 9px;
+        gap: 9px
     }
 
     .serviceWrapper {
-        padding-bottom: 0;
+        padding-bottom: 0
     }
 
     .titleBlock {
-        font-size: 30px;
+        font-size: 30px
     }
 
     .serviceWrapper > div > .titleBlock {
-        margin-bottom: 21px;
+        margin-bottom: 21px
     }
 
     .services {
         overflow: scroll;
         width: auto;
-        scrollbar-width: none;
+        scrollbar-width: none
+    }
+
+    .services > span:first-child {
+        margin-left: 2.6%
+    }
+
+    .services > span:last-child {
+        margin-right: 2.6%
     }
 
     .services > span {
         display: block;
         min-width: 285px;
         padding: 25px 6px 16px 16px;
-        font-size: 18px;
+        font-size: 18px
     }
 
     .services::-webkit-scrollbar {
-        width: 0;
-    }
-
-    .aboutBlock {
-        height: auto;
+        width: 0
     }
 
     .aboutImg {
-        position: inherit;
-        transform: none;
-        width: 100%;
-        height: auto;
+        width: 100%
     }
 
     .aboutWrapper {
-        display: none;
+        display: none
     }
 
     .aboutWrapper.mobile {
         display: block;
-        height: max-content;
+        height: max-content
     }
 
     .aboutInfo {
-        position: inherit;
-        transform: none;
-        height: max-content;
+        height: max-content
     }
 
     .aboutInfo > span {
         font-size: 15px;
         font-weight: 400;
-        line-height: 16px;
+        line-height: 16px
     }
 
     .subtitle {
         font-size: 10px;
         font-weight: 400;
-        line-height: 11px;
+        line-height: 11px
     }
 
     .advantagesBlock {
-        height: 534px;
+        height: 534px
     }
 
     .advantagesBlock > .container {
         gap: 10px;
         justify-content: start;
-        padding-top: 15px;
+        padding-top: 15px
     }
 
     .advantagesBody {
-        gap: 10px;
+        gap: 10px
     }
 
     .advantagesBody span {
         width: 247px;
         height: 73px;
         font-size: 15px;
-        line-height: 16px;
+        line-height: 16px
     }
 
     .clientsBlock {
-        height: max-content;
+        height: max-content
     }
 
     .clientsBlock > .container {
-        justify-content: start;
+        justify-content: start
     }
 
     .clients {
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap
     }
 
     .clients > img {
-        width: 142px;
+        width: 142px
     }
 
     .licensesBlock {
-        height: calc(43vh + 25px);
+        height: calc(43vh + 25px)
     }
 
     .licensesBlock > .container {
-        gap: 34px;
+        gap: 34px
     }
 
     .splide__list {
-        gap: 60px;
+        gap: 60px
     }
 
-    .splide__slide > img,
-    .splide__slide > a {
-        height: 16rem;
+    .splide__arrow {
+        display: block;
+        width: 50px;
+        height: 50px
+    }
+
+    .splide__arrow > svg {
+        fill: #E85029;
+        width: 20px;
+        height: 20px
+    }
+
+    .splide__slide > a, .splide__slide > img {
+        height: 16rem
     }
 
     .splide__pagination__page {
         width: 25px;
-        height: 3px;
+        height: 3px
     }
 
     .contactsBlock > div > span {
         font-size: 15px;
         line-height: 15px;
-        width: 245px;
+        width: 245px
     }
 
-    .map {
-        height: 300px;
+    #map_892519072, .map {
+        height: 300px
     }
 
     .mapInfo {
@@ -516,20 +574,16 @@ iframe{
         gap: 0;
         justify-content: center;
         height: inherit;
-        padding-top: 10px;
+        padding-top: 10px
     }
 
     .mapInfo h3 {
         font-size: 15px;
         padding: 0;
-        line-height: normal;
+        line-height: normal
     }
 
     .mapInfo span {
-        font-size: 10px;
-    }
-
-    #map_892519072 {
-        height: 300px;
+        font-size: 10px
     }
 }
